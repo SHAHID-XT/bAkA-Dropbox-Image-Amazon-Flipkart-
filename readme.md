@@ -1,6 +1,5 @@
 
 # bAkA Dropbox Image
-
 This is a commercial Chrome extension originally built for a client.  
 It collects images from e‑commerce product pages (like Flipkart and Amazon), queues them in the background, uploads them to Dropbox, and gives back clean share links in a CSV.
 
@@ -223,3 +222,4 @@ You can freely modify this project to fit your own workflow:
 - Logic and architecture (queue design, background upload strategy, CSV format, site‑specific scraping rules) were planned and implemented by me. AI helped generate about 60% of the raw code, but roughly 40% of the final implementation was edited or rewritten by hand to match the exact behaviour and reliability needed. 
 - The included Dropbox app key, secret, and tokens belong to a throwaway demo account created with a temporary email, only for testing and demonstration. You should replace them with your own credentials for any real usage. 
 
+# Note: "credentials remove due to github policy"
