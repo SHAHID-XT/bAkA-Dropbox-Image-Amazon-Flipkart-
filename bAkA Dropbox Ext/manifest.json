@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "bAkA Dropbox Image Async",
+  "description": "Collect images from tabs, upload to Dropbox in background with pause/cancel and thumbnails.",
+  "version": "2.2",
+  "icons": {
+    "16": "static/icon.png",
+    "32": "static/icon.png",
+    "48": "static/icon.png",
+    "128": "static/icon.png"  
+  },
+
+  "permissions": [
+    "storage",
+    "alarms",
+    "scripting",
+    "activeTab",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "static/background.js"
+  },
+  "action": { 
+     "default_icon": "static/icon.png",
+    "default_popup": "index.html",
+    "default_title": "bAkA Dropbox Image  "
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["static/content_script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+} 
